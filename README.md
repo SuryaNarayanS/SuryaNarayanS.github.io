@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,14 +8,14 @@
 <body>
 
     <header>
-        <h1>Welcome to My Self Introduction Page</h1>
+        <h1>Welcome to My Webpage</h1>
     </header>
 
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! My name is [Your Name]. I am excited to tell you a little about myself.</p>
-            <p>I am passionate about [Your Interests/Hobbies]. In my free time, I enjoy [Your Activities].</p>
+            <p>Hello! My name is Surya Narayan. I am excited to tell you a little about myself.</p>
+            <p>I am passionate about [Programming]. In my free time, I enjoy [Coding].</p>
         </section>
 
         <section id="goals">
