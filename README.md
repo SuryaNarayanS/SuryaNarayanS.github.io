@@ -14,7 +14,7 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! My name is Surya Narayan. I am excited to tell you a little about myself.</p>
+            <p>Hello! My name is [Surya Narayan]. I am excited to tell you a little about myself.</p>
             <p>I am passionate about [Programming]. In my free time, I enjoy [Coding].</p>
         </section>
 
