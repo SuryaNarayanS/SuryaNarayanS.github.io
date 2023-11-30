@@ -1,37 +1,25 @@
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Self Introduction</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header>
-        <h1>Welcome to My Webpage</h1>
-    </header>
-
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! My name is [Surya Narayan]. I am excited to tell you a little about myself.</p>
-            <p>I am passionate about [Programming]. In my free time, I enjoy [Coding].</p>
-        </section>
-
-        <section id="goals">
-            <h2>My Goals</h2>
-            <p>One of my goals is to [Your Goal or Ambition]. I'm working hard to achieve this by [Your Plan/Approach].</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <p>If you'd like to get in touch with me, feel free to reach out via email at [Your Email] or connect with me on [Your Social Media Handles].</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 YourName</p>
-    </footer>
-
-</body>
+  <head>
+    <title>My first web page</title>
+    <style>
+      img {
+        width: 100px;
+        border-radius: 50px;
+        float: left;
+        margin-right: 10px;
+      }
+      .username {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+    </style>
+    <body>
+      <img
+        src="images/WIN_20231130_21_02_44_Pro.jpg"
+        alt="An Image of suryanarayans"
+      />
+      <p class="username">@suryanarayans</p>
+      <p>I love learning Programming languages</p>
+    </body>
+  </head>
 </html>
