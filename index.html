@@ -7,36 +7,43 @@
     <style>
       /* Body styling */
       body {
-        background-color: violet;
+        background-color: #36454F; /* Page background color */
         font-family: Arial, sans-serif;
         color: white;
         margin: 0;
         padding: 20px;
+        display: flex;
       }
 
-      /* Section for intro text */
-      .intro {
+      /* Left-side menu styling */
+      .menu {
+        width: 200px;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding-top: 20px;
+        text-align: center;
+      }
+
+      .menu a {
         display: block;
-      }
-
-      /* Username font styling */
-      .username {
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        font-size: 2em;
-        margin-bottom: 0;
-      }
-
-      /* Paragraph styling */
-      p {
         color: white;
+        padding: 10px;
+        text-decoration: none;
         font-size: 1.2em;
-        margin: 10px 0;
       }
 
-      /* Styling for the additional text */
-      .description {
-        font-style: italic;
-        margin-top: 10px;
+      .menu a:hover {
+        background-color: #575757;
+      }
+
+      /* Main content area */
+      .content {
+        margin-left: 220px;
+        padding: 20px;
+        width: calc(100% - 240px); /* Adjust width to make space for menu */
       }
 
       /* Footer styling */
@@ -45,7 +52,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: #333;
+        background-color: violet; /* Match the page background color */
         color: white;
         padding: 10px 0;
         text-align: center;
@@ -61,28 +68,46 @@
       footer a:hover {
         color: #f39c12;
       }
+
+      /* Email styling */
+      .email {
+        font-size: 1.2em;
+        margin-top: 10px;
+      }
     </style>
   </head>
   <body>
-    <div class="intro">
-      <div>
-        <p class="username">Suryanarayans</p>
-        <p>I love learning Programming languages</p>
-        <p class="description">Exploring new technologies and gaming!</p>
-      </div>
+    <!-- Left-side Menu -->
+    <div class="menu">
+      <a href="index.html">Home</a> <!-- Link to your homepage -->
+      <a href="mc.html">MC</a> <!-- Link to the MC page (for file download) -->
     </div>
 
-    <!-- Footer with social media links -->
-    <footer>
-      <a href="https://www.instagram.com/surya.n_2009/" target="_blank">
-        <img src="/mnt/data/Design_three_logos_representing_social_media_platf.png" alt="Instagram" width="40px" />
-      </a>
-      <a href="https://discord.gg/YBpWUc6z" target="_blank">
-        <img src="/mnt/data/Design_three_logos_representing_social_media_platf.png" alt="Discord" width="40px" />
-      </a>
-      <a href="https://steamcommunity.com/profiles/76561199186903983/" target="_blank">
-        <img src="/mnt/data/Design_three_logos_representing_social_media_platf.png" alt="Steam" width="40px" />
-      </a>
-    </footer>
+    <!-- Main Content Area -->
+    <div class="content">
+      <div class="intro">
+        <div>
+          <p class="username">Suryanarayans</p>
+          <p>I love learning Programming languages</p>
+          <p class="description">Exploring new technologies and gaming!</p>
+        </div>
+      </div>
+
+      <!-- Footer with social media links and email -->
+      <footer>
+        <a href="https://www.instagram.com/surya.n_2009/" target="_blank">
+          <img src="path_to_instagram_logo.png" alt="Instagram" width="40px" />
+        </a>
+        <a href="https://discord.gg/YBpWUc6z" target="_blank">
+          <img src="path_to_discord_logo.png" alt="Discord" width="40px" />
+        </a>
+        <a href="https://steamcommunity.com/profiles/76561199186903983/" target="_blank">
+          <img src="path_to_steam_logo.png" alt="Steam" width="40px" />
+        </a>
+        <div class="email">
+          <p>Email: <a href="mailto:suryanarayan@example.com">suryanarayan@example.com</a></p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
