@@ -7,7 +7,7 @@
     <style>
       /* Body styling */
       body {
-        background-color: #36454F; /* Page background color */
+        background-color: violet;
         font-family: Arial, sans-serif;
         color: white;
         margin: 0;
@@ -74,13 +74,30 @@
         font-size: 1.2em;
         margin-top: 10px;
       }
+
+      /* Hide/Show button */
+      #toggleButton {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.5em;
+        border: none;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      #toggleButton:hover {
+        background-color: #575757;
+      }
     </style>
   </head>
   <body>
     <!-- Left-side Menu -->
     <div class="menu">
-      <a href="index.html">Home</a> <!-- Link to your homepage -->
-      <a href="mc.html">MC</a> <!-- Link to the MC page (for file download) -->
+      <button id="toggleButton">=</button> <!-- Hide/Show button -->
+      <div id="menuItems">
+        <a href="index.html">Home</a> <!-- Link to your homepage -->
+        <a href="mc.html">MC</a> <!-- Link to the MC page (for file download) -->
+      </div>
     </div>
 
     <!-- Main Content Area -->
@@ -96,18 +113,30 @@
       <!-- Footer with social media links and email -->
       <footer>
         <a href="https://www.instagram.com/surya.n_2009/" target="_blank">
-          <img src="/images/images.png" alt="Instagram" width="40px" />
+          <img src="path_to_instagram_logo.png" alt="Instagram" width="40px" />
         </a>
         <a href="https://discord.gg/YBpWUc6z" target="_blank">
-          <img src="/images/images (1).png" alt="Discord" width="40px" />
+          <img src="path_to_discord_logo.png" alt="Discord" width="40px" />
         </a>
         <a href="https://steamcommunity.com/profiles/76561199186903983/" target="_blank">
-          <img src="/images/download.png" alt="Steam" width="40px" />
+          <img src="path_to_steam_logo.png" alt="Steam" width="40px" />
         </a>
         <div class="email">
-          <p>Email: <a href="mailto:suryanarayan@example.com">suryanarayan@example.com</a></p>
+          <p>Email: <a href="mailto:suryanarayan@example.com">suryanarayan</a></p>
         </div>
       </footer>
     </div>
+
+    <script>
+      // Toggle visibility of menu items when "=" button is clicked
+      document.getElementById('toggleButton').onclick = function() {
+        var menuItems = document.getElementById('menuItems');
+        if (menuItems.style.display === "none") {
+          menuItems.style.display = "block"; // Show the menu items
+        } else {
+          menuItems.style.display = "none"; // Hide the menu items
+        }
+      };
+    </script>
   </body>
 </html>
